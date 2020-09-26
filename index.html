@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faisal Submission</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body id="themes" class=" ">
+
+    <!-- ini bagian header -->
+    <header>
+        <nav id="nav-themes" class="container themes">
+            <div class="brand">
+                <a href="#landing" class="themes">faisal.</a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a class="menu-link themes" href="#landing">Beranda</a></li>
+                    <li><a class="menu-link themes" href="#bagian-2">Profil</a></li>
+                    <li><a class="menu-link themes" href="#bagian-3">Kontak</a></li>
+                    <li>
+                        <input type="checkbox" id="toggle" class="checkbox" onclick="toggleDark()" checked />
+                        <label for="toggle" class="switch"></label>
+                    </li>
+                    <li><a class="menu-link themes" href="#" class="button-dark">Darkmode</a></li>
+                </ul>
+            </div>
+            <div class="mobile themes">
+                <a onclick="openNav()" class="themes">&#9776;</a>
+            </div>
+            <div id="mySidepanel" class="sidepanel themes">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a onclick="closeNav()" href="#">Beranda</a>
+                <a onclick="closeNav()" href="#bagian-2">Profil</a>
+                <a onclick="closeNav()" href="#bagian-3">Kontak</a>
+                <a href="#" class="themes">
+                    <input type="checkbox" id="toggle-dark-mobile" class="checkbox" onclick="toggleDark2()" checked />
+                    <label for="toggle-dark-mobile" class="switch"></label>
+                    <a class="menu-link themes" href="#" class="button-dark">Darkmode</a>
+                </a>
+
+            </div>
+        </nav>
+    </header>
+    <!-- ini akhir bagian header -->
+
+
+
+    <!-- ini bagian main  -->
+    <main>
+        <section id="landing" class="v-100">
+            <div id="content" class="container flex">
+                <div class="col-50">
+                    <article>
+                        <h1 id="oke" class="big-header">Tak kenal maka <br>ayo kenalan</h1>
+                        <br>
+                        <p>Mari mengenal lebih jauh <br>
+                            dan menambah silaturrahmi dengan saya</p>
+                        <a href="#bagian-2">
+                            <button class="btn btn-rounded color-themes margin-10 margin-60">kenalan
+                                yuk!</button>
+                        </a>
+                    </article>
+                </div>
+                <div class="col-50">
+                    <aside>
+                        <img src="./img/Ilustrasi.svg" alt="ilustrasi" class="img-responsive img-landing">
+                    </aside>
+                </div>
+            </div>
+            <img src="./img/zigzag.svg" alt="" class="zigzag1">
+        </section>
+
+        <section id="bagian-2" class="v-100">
+            <div class="container flex justifiy-center align-center">
+                <div class="col-50 justifiy-center">
+                    <img id="img-profil" class="foto-biodata img-profil img-responsive " src="./img/foto_profil.png"
+                        alt="foto profil">
+                </div>
+                <div class="col-50 justifiy-center" style="transition: ease-in-out 0.3s;">
+                    <aside>
+                        <h1 id="header-biodata" class="big-header">
+                            Profil
+                        </h1>
+                        <br>
+                        <p id="deskripsi-biodata">
+                            Halo nama saya <b>Muhamad Faisal Aqil Amanullah</b>. <br> Saya berdomisili di Kota Malang
+                            dan menyukai <br> desain
+                            website dan aplikasi
+                        </p>
+                        <div class="btn-group margin-60">
+                            <button onclick="getClick(this.id)" id="Profil" class="btn btn-light btn-rounded">
+                                Profil
+                            </button>
+                            <button onclick="getClick(this.id)" id="Hobi" class="btn btn-light btn-rounded ml-10">
+                                Hobi
+                            </button>
+                            <button onclick="getClick(this.id)" id="Domisili" class="btn btn-light btn-rounded ml-10">
+                                Domisili
+                            </button>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+            <img class="img-responsive img-pemanis1" src="./img/lingkaran_pemanis1.svg" alt="">
+        </section>
+
+        <section id="bagian-3">
+            <div class="container">
+                <center>
+                    <h1 class="big-header">
+                        Kontak
+                    </h1>
+                    <br>
+                    <p>
+                        Selalu update informasi dari saya <br>melalui beberapa jejaring sosial yang saya miliki
+                    </p>
+                    <div class="btn-group justifiy-center margin-60">
+                        <a href="https://instagram.com/sam_aqil_" target="__blank">
+                            <button class="btn btn-light btn-rounded">
+                                instagram
+                            </button>
+                        </a>
+                        <a href="https://behance.net/faisalaqilamanullah" target="__blank">
+                            <button class="btn btn-light btn-rounded ml-10">
+                                behance
+                            </button>
+                        </a>
+                        <a href="https://dribbble.com/faisalaqilamanullah" target="__blank">
+                            <button class="btn btn-light btn-rounded ml-10">
+                                dribbble
+                            </button>
+                        </a>
+                    </div>
+                </center>
+            </div>
+        </section>
+        <img class="img-responsive img-pemanis2" src="./img/lingkaran_pemanis2.svg" alt="">
+    </main>
+    <!-- ini akhir bagian main  -->
+
+
+
+
+    <!-- ini footer -->
+    <footer>
+        <center>
+            <p>copyright <b>faisal</b> - 2020</p>
+        </center>
+    </footer>
+    <!-- ini akhir footer -->
+    <script src="script.js"></script>
+</body>
+
+</html>
