@@ -115,15 +115,15 @@ function getClick(elem) {
     if (elem == "Profil") {
         getHeader.innerHTML = elem;
         getHeader.style.transition = "0.3s";
-        getFoto.src = "/img/foto_profil.png";
+        getFoto.src = "./img/foto_profil.png";
         getDeskripsi.innerHTML = " <p>Halo nama saya <b>Faisal Aqil</b>. <br> Saya berdomisili di Kota Malang dan menyukai <br> desain website dan aplikasi</p > ";
     } else if (elem == "Hobi") {
         getHeader.innerHTML = elem;
-        getFoto.src = "/img/fotografi.png";
+        getFoto.src = "./img/fotografi.png";
         getDeskripsi.innerHTML = " <p>Saya mempunya beberapa hobi, antara lain fotografi, mendesain, dan belajar hal baru. </p > ";
     } else {
         getHeader.innerHTML = elem;
-        getFoto.src = "/img/kota_malang.png";
+        getFoto.src = "./img/kota_malang.png";
         getDeskripsi.innerHTML = " <p>Kota Malang adalah pilihan saya untuk melanjutkan pendidikan. Selain itu saya juga senang mengunjungi beberapa tempat wisata, antara lain <b>Kampung Warna Warni<b> </p > ";
 
     }
